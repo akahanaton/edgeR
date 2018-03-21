@@ -1,0 +1,3 @@
+/gpfs/public/tools2/cufflinks-2.2.1.Linux_x86_64/cuffmerge -o human.gtf -g ./Homo_sapiens.GRCh38/Homo_sapiens.GRCh38.84.gtf -s ./Homo_sapiens.GRCh38/Homo_sapiens.GRCh38.dna_rm.toplevel.gtf.fa -p 25 ./human.gtf.txt
+/gpfs/public/tools2/cufflinks-2.2.1.Linux_x86_64/cuffdiff -p 25 -o cuffdiff.human.0-8 --FDR --library-norm-method=classic-fpkm ./human.gtf/merged.gtf ./tophat2.HEK293T_Mock_0h/accepted_hits.bam ./tophat2.HEK293T_HeV_8h/accepted_hits.bam
+/gpfs/public/tools2/cufflinks-2.2.1.Linux_x86_64/cuffdiff -p 25 -o cuffdiff.human.0-24 --FDR --library-norm-method=classic-fpkm ./human.gtf/merged.gtf ./tophat2.HEK293T_Mock_0h/accepted_hits.bam ./tophat2.HEK293T_HeV_24h/accepted_hits.bam
